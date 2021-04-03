@@ -41,8 +41,11 @@
   padding-top: 27px;
   padding-bottom: 26px;
 
+  font-size: 14px;
+  line-height: 1.2; 
   font-weight: 700;
   text-transform: uppercase;
+  color: $primary-text-color;
 
   @include transition(color);
 
