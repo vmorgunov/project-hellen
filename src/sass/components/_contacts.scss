@@ -1,0 +1,25 @@
+$common-black-color: #111518;
+$common-white-color: #ffffff;
+$primary-text-color: #b9b9b9;
+$secondary-text-color: #3d3d3d;
+$accent-color: #ff6b09;
+$white-bg-color: #f1f1f1;
+$black-bg-color: #111518e6;
+.contacts {
+    max-width: 1600px;
+    margin: 30px auto;
+    padding: 40px;
+}
+
+.register__input::placeholder {
+    padding-left: 8px;
+    color: $primary-text-color;
+}
+
+.register__input:not(:placeholder-shown):required:valid {
+    border-color: black;
+}
+
+.register__input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
