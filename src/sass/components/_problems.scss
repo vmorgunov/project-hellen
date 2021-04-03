@@ -1,0 +1,139 @@
+.problems__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    $common-black-color 15%,
+    $common-black-color 73%,
+    $white-bg-color 73%,
+    $white-bg-color 100%
+  );
+
+  @media (min-width: 768px) {
+    padding-top: 60px;
+    background-image: linear-gradient(
+      to bottom,
+      $common-black-color 15%,
+      $common-black-color 65%,
+      $white-bg-color 65%,
+      $white-bg-color 100%
+    );
+  }
+}
+
+.problems__title {
+  display: block;
+  margin-bottom: 27px;
+
+  @include title;
+  color: $common-white-color;
+
+  @media (min-width: 768px) {
+    width: 450px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 860px;
+    margin-bottom: 70px;
+  }
+}
+
+.problems__break-line {
+  display: block;
+
+  @media (min-width: 325px) {
+    display: unset;
+  }
+}
+
+.problems__help {
+  color: $accent-color;
+}
+
+.problems__wrapper {
+  padding: 20px 15px 20px 30px;
+  background-color: $common-white-color;
+
+  @media (min-width: 768px) {
+    padding: 30px 96px 30px 96px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 1314px;
+    padding: 30px 50px 30px 96px;
+  }
+}
+
+.problems__list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -35px;
+    margin-top: -20px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  @media (min-width: 1600px) {
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+}
+
+.problems__item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    display: block;
+    counter-increment: problems;
+    content: '— 0' counter(problems) '';
+
+    margin-bottom: 5px;
+
+    @include pre-title;
+    color: $accent-color;
+  }
+
+  @include pre-title;
+  color: $common-black-color;
+
+  @media (min-width: 768px) {
+    width: 230px;
+    margin-top: 20px;
+    margin-left: 35px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    flex-basis: calc(100% / 2 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1600px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+.problems__item--first {
+  @media (min-width: 320px) {
+    width: 200px;
+  }
+}
+
+.problems__item--second {
+  @media (max-width: 320px) {
+    display: block;
+    width: 236px;
+  }
+}
