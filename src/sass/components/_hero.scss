@@ -1,17 +1,28 @@
 .hero {
-  padding-top: 109px;
-  padding-bottom: 77px;
+  padding-top: 110px;
+  padding-bottom: 47px;
   background-image: url('../images/hero_background.png');
-  background-size: cover;
-  background-position: -84px 0px;
+  background-size: 768px 618px, cover;
+  background-position: -64px 20px;
   background-repeat: no-repeat;
 
   @media screen and(min-width: 768px) {
     padding-top: 159px;
-    padding-left: 40px;
+    padding-bottom: 93px;
     position: relative;
     background-image: url('../images/hero_background_tab.png');
     background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  @media screen and(min-width: 1280px) {
+    padding-top: 229px;
+    padding-bottom: 144px;
+    background-image: url('../images/hero_background.png');
+    background-size: cover;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
   }
 }
@@ -39,10 +50,15 @@
 
   @media screen and(min-width: 768px) {
     display: inline-flex;
-
     font-size: 26px;
     line-height: 1.31;
     width: 332px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.29;
+    width: 642px;
   }
 }
 
@@ -59,22 +75,23 @@
   width: 280px;
 
   @media screen and(min-width: 768px) {
-    display: inline-flex;
+  }
+
+  @media screen and(min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.65;
   }
 }
 
 .hero__text--optional {
-  display: flex;
   font-weight: 500;
   color: $primary-text-color;
 }
 
 .hero__text--primary {
-  display: flex;
 }
 
 .hero__text--accent {
-  display: flex;
   color: $accent-color;
 }
 
@@ -98,6 +115,13 @@
   @media screen and(min-width: 768px) {
     margin-left: 0;
   }
+
+  @media screen and(min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 354px;
+    height: 70px;
+  }
 }
 
 .hero__image {
@@ -109,5 +133,12 @@
     right: 18px;
     min-width: 375px;
     min-height: 320px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    position: absolute;
+    top: 149px;
+    right: 46px;
+    width: 842px;
   }
 }
