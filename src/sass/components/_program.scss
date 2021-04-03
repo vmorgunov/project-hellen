@@ -1,8 +1,6 @@
 .program-container {
-  margin-left: 90px;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 0;
+  @media screen and (max-width: 480px) {
+    margin-left: 90px;
   }
 }
 
@@ -11,6 +9,7 @@
   background-image: url(../images/program_group.png);
   background-repeat: no-repeat;
   background-position: 135% 100%;
+  background-clip: border-box;
   background-size: 50%;
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -21,13 +20,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-position: 100% 97%;
-    background-size: 40%;
+    background-position: 100% 100%;
+    background-size: 50%;
   }
 
   @media screen and (min-width: 1200px) {
     background-position: 0 100%;
-    background-size: 35%;
+    background-size: 38%;
   }
 }
 
@@ -42,6 +41,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 120px;
+    margin-left: 0;
   }
 }
 
@@ -54,7 +54,7 @@
   width: 165px;
 
   justify-content: center;
-  max-width: 165px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -65,10 +65,10 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: -30px;
-    margin-right: 0;
+
     justify-content: unset;
     flex-direction: unset;
-    min-width: 1280px;
+    width: 100%;
   }
 }
 
@@ -79,7 +79,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
 
     display: flex;
     flex-direction: column;
@@ -129,7 +128,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: unset;
     margin-bottom: 25px;
-    width: 200px;
+    width: 100%;
   }
 }
 
@@ -143,7 +142,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: unset;
     margin-bottom: 25px;
-    width: 200px;
+    width: 100;
   }
 }
 
@@ -230,13 +229,13 @@
   margin-bottom: 10px;
 }
 
-.program__border::before {
+.program__list::before {
   content: '';
   position: absolute;
   top: 10px;
   left: -20px;
   width: 1px;
-  height: 94%;
+  height: 93%;
   color: $common-white-color;
   background-color: $common-white-color;
 
