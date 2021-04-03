@@ -5,6 +5,7 @@
 
 body {
   font-family: Montserrat, Arial, sans-serif;
+  counter-reset: problems;
 }
 
 img {
@@ -38,7 +39,7 @@ a {
     padding: 0 125px;
   }
 
-  @media scree and(min-width: 1314px) {
+  @media screen and(min-width: 1314px) {
     max-width: 1314px;
   }
 }
