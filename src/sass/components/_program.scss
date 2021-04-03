@@ -40,7 +40,6 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 120px;
-    margin-left: 0;
   }
 }
 
@@ -76,9 +75,6 @@
   max-width: 200px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-
     display: flex;
     flex-direction: column;
     width: 155px;
@@ -141,7 +137,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: unset;
     margin-bottom: 25px;
-    width: 100;
+    width: 100%;
   }
 }
 
