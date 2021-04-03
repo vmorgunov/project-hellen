@@ -28,7 +28,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background-position: -3% 95%;
+    background-position: -3% 98%;
     background-size: 502px;
   }
 }
@@ -230,7 +230,13 @@
   margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
-    width: 176px;
+    width: 100%;
+  }
+}
+
+.special {
+  @media screen and (min-width: 1200px) {
+    width: 60px;
   }
 }
 
