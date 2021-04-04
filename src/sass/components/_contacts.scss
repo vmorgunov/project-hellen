@@ -237,6 +237,14 @@ $black-bg-color: #111518e6;
     color: $common-white-color;
     background-color: $accent-color;
     border: 0px;
+    cursor: pointer;
+    @include transition(color);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        background-color: $common-white-color;
+        border: 2px solid $accent-color;
+    }
     @media screen and (min-width: 768px) {
         margin-top: 31px;
     }
