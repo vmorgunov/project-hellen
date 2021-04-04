@@ -19,25 +19,78 @@
   letter-spacing: 0.03em;
   color: $common-black-color;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
 }
 
 .about__title-name {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.08em;
   margin-top: 20px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #b9b9b9;
   color: $common-black-color;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.about__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 41px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 31px;
+  }
 }
 
 .about__img {
   max-width: 100%;
   max-height: 306px;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 530px;
+    max-height: 667px;
+  }
 }
 .about__list {
-  padding: 20px 0;
+  border-top: 1px solid #b9b9b9;
+  padding-top: 20px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 30px;
+  }
+}
+
+.about__list::after {
+  content: '—';
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .about__item {
@@ -49,6 +102,12 @@
 
   position: relative;
   padding-left: 27px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 35px;
+  }
 }
 
 .about__item:not(:last-child) {
@@ -63,9 +122,14 @@
   width: 17px;
   height: 14px;
   background-repeat: no-repeat;
-  // background-position: 50%;
-  // background-size: contain;
+  background-position: 50%;
+  background-size: contain;
   background-image: url(../images/icon-chek.svg);
+
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 20px;
+  }
 }
 
 .about__text {
@@ -79,6 +143,11 @@
   &--last {
     margin-bottom: unset;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .about__link {
@@ -89,4 +158,10 @@
   line-height: 1.67;
   text-decoration: underline;
   color: $accent-color;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
