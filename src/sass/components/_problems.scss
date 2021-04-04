@@ -22,13 +22,13 @@
       linear-gradient(
         to bottom,
         $common-black-color 15%,
-        $common-black-color 75%,
-        #ffffff 75%,
+        $common-black-color 60%,
+        #ffffff 60%,
         #ffffff 100%
       );
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 30%;
+    background-position-y: 18%;
     background-size: 30% 65%, 100%;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -38,13 +38,13 @@
         linear-gradient(
           to bottom,
           $common-black-color 15%,
-          $common-black-color 75%,
-          #ffffff 75%,
+          $common-black-color 70%,
+          #ffffff 70%,
           #ffffff 100%
         );
       background-repeat: no-repeat;
       background-position-x: 115%;
-      background-position-y: 35%;
+      background-position-y: 18%;
       background-size: 30% 65%, 100%;
     }
   }
@@ -123,13 +123,13 @@
 
   @media (min-width: 1280px) {
     width: 860px;
-    margin-top: 60px;
-    margin-bottom: 70px;
+    // margin-top: 60px;
+    margin-bottom: 60px;
   }
 
-  @media (min-width: 1281px) {
-    margin-top: 100px;
-  }
+  // @media (min-width: 1281px) {
+  //   margin-top: 100px;
+  // }
 }
 
 .problems__break-line {
