@@ -24,7 +24,9 @@
     }
   }
 
-  @media screen and(min-width: 1280px) {
+  // @media screen and(min-width: 1280px){}
+
+  @media screen and(min-width: 1344px) {
     padding-top: 125px;
     padding-bottom: 144px;
     background-image: url('../images/hero_background.png');
@@ -38,9 +40,9 @@
     }
   }
 
-  @media screen and(min-width: 1344px) {
-    background-position: 0px -60px;
-  }
+  // @media screen and(min-width: 1344px) {
+  // background-position: 0px -60px;
+  // }
 
   @media screen and(min-width: 1680px) {
     background-position: 0px -105px;
@@ -71,7 +73,7 @@
     width: 332px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     font-size: 58px;
     width: 642px;
     margin-bottom: 24px;
@@ -97,7 +99,7 @@
     width: 332px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     width: 536px;
     line-height: 1.65;
     flex-direction: row;
@@ -116,7 +118,7 @@
 .hero__text--accent {
   color: $accent-color;
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     margin-left: 3px;
   }
 }
@@ -141,7 +143,7 @@
     margin-left: 0;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     font-size: 14px;
     line-height: 1.21;
   }
@@ -165,14 +167,14 @@
     max-width: 40%;
   }
 
-  @media screen and(min-width: 1280px) {
-    position: absolute;
-    top: 165px;
-    right: 26px;
-    max-width: 48%;
-  }
+  // @media screen and(min-width: 1280px) {
+  //   position: absolute;
+  //   top: 165px;
+  //   right: 26px;
+  //   max-width: 48%;
+  // }
 
-  @media screen and(min-width: 1314px) {
+  @media screen and(min-width: 1344px) {
     position: absolute;
     top: 105px;
     right: 16px;
