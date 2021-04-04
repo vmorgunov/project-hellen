@@ -1,6 +1,6 @@
 .how-we-do {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 50px;
+}
 
 .container {
   max-width: 480px;
@@ -113,7 +113,7 @@
   font-size: 14px;
   line-height: 1.667;
   letter-spacing: 0.08em;
-// @include pre-title;
+  // @include pre-title;
   text-align: center;
   color: $common-black-color;
 
@@ -138,7 +138,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.7;
-//   @include text;
+  //   @include text;
   text-align: center;
   letter-spacing: 0.08em;
   color: $primary-text-color;
