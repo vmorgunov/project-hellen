@@ -1,0 +1,74 @@
+$common-black-color: #111518;
+$common-white-color: #ffffff;
+$primary-text-color: #b9b9b9;
+$secondary-text-color: #3d3d3d;
+$accent-color: #ff6b09;
+$white-bg-color: #f1f1f1;
+$black-bg-color: #111518e6;
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer__logo {
+    border: 1px solid red;
+    background-color: burlywood;
+    margin-bottom: 20px;
+}
+
+.info__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info__item--tel {
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: $common-black-color;
+}
+
+.info__icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.info__img {
+    display: inline-flex;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid inherit;
+    border-radius: 2px;
+    background-image: url('../images/contacts_insta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: grey;
+}
+
+.aside {
+    display: inline-block;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2px;
+    padding: 21px 51px;
+    color: #b9b9b9;
+    background-color: $black-bg-color;
+}
