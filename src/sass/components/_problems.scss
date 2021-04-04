@@ -1,7 +1,3 @@
-.problems {
-  // background-image: url(../images/problems_fire.png);
-}
-
 .problems__container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -35,7 +31,25 @@
       );
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 35%;
+    background-position-y: 30%;
+    background-size: 30% 65%, 100%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/problems_fire@2x.png),
+        linear-gradient(
+          to bottom,
+          $common-black-color 15%,
+          $common-black-color 75%,
+          $white-bg-color 75%,
+          $white-bg-color 100%
+        );
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: 35%;
+      background-size: 30% 65%, 100%;
+    }
   }
 }
 
@@ -79,13 +93,12 @@
   background-color: $common-white-color;
 
   @media (min-width: 768px) {
-    padding: 30px 30px;
+    padding: 30px 70px 50px 50px;
   }
 
   @media (min-width: 1600px) {
     max-width: 1314px;
-    padding: 30px 30px;
-    background-image: linear-gradient(url(../images/program_group.png));
+    padding: 40px 40px;
   }
 }
 
@@ -93,8 +106,8 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -35px;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 
   @media (min-width: 1280px) {
@@ -104,8 +117,8 @@
   }
 
   @media (min-width: 1600px) {
-    margin-left: -20px;
-    margin-top: -20px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -121,16 +134,22 @@
 
     margin-bottom: 5px;
 
-    @include pre-title;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.08em;
     color: $accent-color;
   }
 
-  @include pre-title;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.08em;
   color: $common-black-color;
 
   @media (min-width: 768px) {
     width: 230px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 35px;
     &:not(:last-child) {
       margin-bottom: 0px;
@@ -141,6 +160,16 @@
     flex-basis: calc(100% / 3 - 20px);
     margin-left: 20px;
     margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 1600px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 18px;
   }
 }
 
