@@ -1,3 +1,7 @@
+.problems {
+  // background-image: url(../images/problems_fire.png);
+}
+
 .problems__container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -19,6 +23,20 @@
       $white-bg-color 100%
     );
   }
+
+  @media (min-width: 1280px) {
+    background-image: url(../images/problems_fire.png),
+      linear-gradient(
+        to bottom,
+        $common-black-color 15%,
+        $common-black-color 75%,
+        $white-bg-color 75%,
+        $white-bg-color 100%
+      );
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 35%;
+  }
 }
 
 .problems__title {
@@ -35,7 +53,12 @@
 
   @media (min-width: 1280px) {
     width: 860px;
+    margin-top: 60px;
     margin-bottom: 70px;
+  }
+
+  @media (min-width: 1281px) {
+    margin-top: 100px;
   }
 }
 
@@ -56,12 +79,13 @@
   background-color: $common-white-color;
 
   @media (min-width: 768px) {
-    padding: 30px 96px 30px 96px;
+    padding: 30px 30px;
   }
 
   @media (min-width: 1600px) {
     max-width: 1314px;
     padding: 30px 30px;
+    background-image: linear-gradient(url(../images/program_group.png));
   }
 }
 
@@ -74,6 +98,7 @@
   }
 
   @media (min-width: 1280px) {
+    text-align: left;
     margin-left: -20px;
     margin-top: -20px;
   }
