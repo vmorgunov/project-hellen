@@ -1,0 +1,152 @@
+    $common-black-color: #111518;
+    $common-white-color: #ffffff;
+    $primary-text-color: #b9b9b9;
+    $secondary-text-color: #3d3d3d;
+    $accent-color: #ff6b09;
+    $white-bg-color: #f1f1f1;
+    $black-bg-color: #111518e6;
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+        @media screen and (min-width: 1280px) {
+            justify-content: flex-start;
+            padding-top: 48px;
+            padding-bottom: 53px;
+        }
+    }
+    
+    .footer__logo {
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-right: 290px;
+        }
+    }
+    
+    .info {
+        @media screen and (min-width: 768px) {
+            width: 358px;
+        }
+    }
+    
+    .info__list {
+        padding-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-bottom: 0;
+        }
+    }
+    
+    .info__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+    
+    .info__item--tel {
+        position: relative;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 767px) {
+            flex-direction: row;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            padding-right: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            padding-right: 30px;
+            border-right: 1px solid $primary-text-color;
+        }
+    }
+    
+    .info__link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.08em;
+        color: $common-black-color;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+    
+    .info__icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        @media screen and (min-width: 768px) {
+            top: 10px;
+            left: -30px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    
+    .info__link--instagram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-image: linear-gradient( to top right, #ffff00, #d104ec);
+        @media screen and (min-width: 768px) {
+            margin-left: 24px;
+        }
+    }
+    
+    .info__img {
+        display: inline-flex;
+        text-align: center;
+        width: 28px;
+        height: 28px;
+        background-image: url('../images/icon-instagram.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .aside {
+        background-color: $black-bg-color;
+    }
+    
+    .aside__text {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        color: #b9b9b9;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2px;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            padding-top: 22px;
+            padding-bottom: 22px;
+        }
+    }
