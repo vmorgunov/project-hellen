@@ -5,6 +5,8 @@
 
 body {
   font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  background-color: $common-white-color;
   counter-reset: problems;
 }
 
@@ -20,7 +22,7 @@ ol {
 }
 
 a {
-  font-style: normal;
+  display: block;
   text-decoration: none;
 }
 
