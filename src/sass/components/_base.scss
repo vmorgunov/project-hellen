@@ -5,6 +5,9 @@
 
 body {
   font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  background-color: $common-white-color;
+  counter-reset: problems;
 }
 
 img {
@@ -19,26 +22,31 @@ ol {
 }
 
 a {
-  font-style: normal;
+  display: block;
   text-decoration: none;
 }
 
 .container {
   max-width: 480px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
+  counter-reset: benefits;
 
   @media screen and(min-width: 768px) {
     max-width: 768px;
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: 1280px) {
     max-width: 1280px;
-    padding: 0 125px;
+    padding: 0 100px;
   }
 
-  @media scree and(min-width: 1314px) {
+  @media screen and(min-width: 1314px) {
     max-width: 1314px;
+  }
+
+  @media screen and(min-width: 1600px) {
+    max-width: 1600px;
   }
 }
