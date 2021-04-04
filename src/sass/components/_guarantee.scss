@@ -12,7 +12,7 @@
   color: $common-black-color;
   padding-top: 50px;
 
-  @media screen and(min-width:1314px) {
+  @media screen and(min-width:1344px) {
     font-size: 46px;
     padding-top: 137px;
   }
@@ -32,7 +32,7 @@
     padding-right: 50px;
   }
 
-  @media screen and(min-width:1280px) {
+  @media screen and(min-width:1344px) {
     background-color: $white-bg-color;
     padding-top: 50px;
     padding-left: 164px;
@@ -53,14 +53,10 @@
     padding-left: unset;
   }
 
-  @media screen and(min-width:1280px) {
-    width: 100%;
+  @media screen and(min-width:1344px) {
+    width: 1038px;
     font-size: 20px;
     line-height: 1.4;
-  }
-
-  @media screen and(min-width:1314px) {
-    width: 1038px;
   }
 
   &:not(:first-child) {
@@ -85,7 +81,7 @@
       margin-left: -40px;
     }
 
-    @media screen and (min-width: 1314px) {
+    @media screen and (min-width: 1344px) {
       margin-left: -50px;
     }
   }
@@ -104,11 +100,7 @@
       left: -34px;
     }
 
-    @media screen and (min-width: 1200px) {
-      height: 30px;
-    }
-
-    @media screen and (min-width: 1314px) {
+    @media screen and (min-width: 1344px) {
       left: -44px;
       height: 40px;
     }
