@@ -88,6 +88,11 @@
         letter-spacing: 0.08em;
         color: $common-black-color;
         text-align: center;
+        @include transition(color);
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
         @media screen and (min-width: 768px) {
             font-size: 20px;
             line-height: 1.2;
@@ -116,7 +121,13 @@
         width: 40px;
         height: 40px;
         border-radius: 30%;
+        cursor: pointer;
         background-image: linear-gradient( to top right, #ffff00, #d104ec);
+        @include transition(background-image);
+        &:hover,
+        &:focus {
+            background-image: linear-gradient( to bottom right, #d104ec, #ffff00);
+        }
         @media screen and (min-width: 768px) {
             margin-left: 24px;
         }
