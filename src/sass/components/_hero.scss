@@ -1,29 +1,49 @@
 .hero {
-  padding-top: 110px;
+  position: relative;
+  padding-top: 51px;
   padding-bottom: 47px;
   background-image: url('../images/hero_background.png');
   background-size: 768px 618px, cover;
-  background-position: -64px 20px;
-  background-repeat: no-repeat;
+  background-position: -64px -10px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/hero_background@2x.png');
+  }
 
   @media screen and(min-width: 768px) {
-    padding-top: 159px;
+    padding-top: 71px;
     padding-bottom: 93px;
     background-image: url('../images/hero_background_tab.png');
     background-size: contain;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     width: 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero_background_tab@2x.png');
+    }
   }
 
   @media screen and(min-width: 1280px) {
-    padding-top: 229px;
+    padding-top: 125px;
     padding-bottom: 144px;
     background-image: url('../images/hero_background.png');
     background-size: cover;
-    background-position: 0px 0px;
+    background-position: 0px -55px;
     background-repeat: no-repeat;
     width: 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero_background@2x.png');
+    }
+  }
+
+  @media screen and(min-width: 1344px) {
+    background-position: 0px -60px;
+  }
+
+  @media screen and(min-width: 1680px) {
+    background-position: 0px -105px;
   }
 }
 
@@ -40,38 +60,32 @@
 }
 
 .hero__title {
+  @include title;
+
   width: 280px;
   margin-bottom: 30px;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.35;
-  letter-spacing: 0.03em;
   color: $common-black-color;
 
   @media screen and(min-width: 768px) {
     display: inline-flex;
-    font-size: 26px;
-    line-height: 1.31;
     width: 332px;
   }
 
   @media screen and(min-width: 1280px) {
     font-size: 58px;
-    line-height: 1.29;
     width: 642px;
     margin-bottom: 24px;
   }
 }
 
 .hero__text {
+  @include pre-title;
+
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-bottom: 0px;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.57;
-  letter-spacing: 0.08em;
   color: $common-black-color;
   width: 280px;
 
@@ -85,7 +99,6 @@
 
   @media screen and(min-width: 1280px) {
     width: 536px;
-    font-size: 20px;
     line-height: 1.65;
     flex-direction: row;
   }
@@ -109,21 +122,20 @@
 }
 
 .hero__link {
+  @include button;
+  @include transition(all);
+
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  width: 260px;
-  height: 48px;
-  background-color: #ff6b09;
-  color: #ffffff;
+  background-color: $accent-color;
+  color: $common-white-color;
 
   @media screen and(min-width: 768px) {
     margin-left: 0;
@@ -132,26 +144,45 @@
   @media screen and(min-width: 1280px) {
     font-size: 14px;
     line-height: 1.21;
-    width: 354px;
-    height: 70px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $common-white-color;
+    color: $accent-color;
+    border: 2px solid $accent-color;
   }
 }
 
 .hero__image {
-  width: 208px;
+  max-width: 208px;
 
   @media screen and(min-width: 768px) {
     position: absolute;
-    top: 172px;
+    top: 84px;
     right: 18px;
     min-width: 375px;
-    min-height: 320px;
+    max-width: 40%;
   }
 
   @media screen and(min-width: 1280px) {
     position: absolute;
-    top: 149px;
-    right: 46px;
+    top: 165px;
+    right: 26px;
+    max-width: 48%;
+  }
+
+  @media screen and(min-width: 1314px) {
+    position: absolute;
+    top: 105px;
+    right: 16px;
+    max-width: 48%;
+  }
+
+  @media screen and(min-width: 1680px) {
+    position: absolute;
+    top: 45px;
+    right: 16px;
     width: 842px;
   }
 }
