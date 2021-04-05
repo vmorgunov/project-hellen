@@ -94,6 +94,9 @@
     text-align: center;
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
@@ -128,6 +131,10 @@
     &:focus {
         color: $accent-color;
     }
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.2;
+    }
     @media screen and (min-width: 768px) {
         font-size: 20px;
         line-height: 1.2;
@@ -142,7 +149,7 @@
     height: 20px;
     @media screen and (min-width: 768px) {
         top: 10px;
-        left: -30px;
+        left: -35px;
         width: 24px;
         height: 24px;
     }
