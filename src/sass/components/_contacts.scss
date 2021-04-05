@@ -1,249 +1,246 @@
-$common-black-color: #111518;
-$common-white-color: #ffffff;
-$primary-text-color: #b9b9b9;
-$secondary-text-color: #3d3d3d;
-$accent-color: #ff6b09;
-$white-bg-color: #f1f1f1;
-$black-bg-color: #111518e6;
-.contacts {
-    margin-left: auto;
-    margin-right: auto;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.63);
-    @media screen and (max-width: 767px) {
-        display: flex;
-        padding-top: 50px;
-        padding-bottom: 50px;
+    .contacts {
+        margin-left: auto;
+        margin-right: auto;
         background-size: auto;
         background-repeat: no-repeat;
         background-position: center;
+        background-color: rgba(0, 0, 0, 0.63);
+        @media screen and (max-width: 767px) {
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        @media screen and (min-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 71px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-top: 100px;
+            padding-bottom: 62px;
+            background-image: url(../images/form_background.png);
+            @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../images/form_background@2x.png);
+            }
+        }
     }
-    @media screen and (min-width: 768px) {
-        padding-top: 50px;
-        padding-bottom: 71px;
-    }
-    @media screen and (min-width: 1280px) {
-        padding-top: 100px;
-        padding-bottom: 62px;
-    }
-}
-
-.contacts__title {
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.36;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-    color: $common-white-color;
-    @media screen and (min-width: 320px) {
-        max-width: 280px;
+    
+    .contacts__title {
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+        text-align: center;
         font-size: 14px;
         line-height: 1.36;
+        letter-spacing: 0.03em;
         margin-bottom: 30px;
+        color: $common-white-color;
+        @media screen and (min-width: 320px) {
+            max-width: 280px;
+            font-size: 14px;
+            line-height: 1.36;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 648px;
+            font-size: 26px;
+            line-height: 1.26;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1090px;
+            font-size: 46px;
+            line-height: 1.3;
+            margin-bottom: 50px;
+        }
     }
-    @media screen and (min-width: 768px) {
-        max-width: 648px;
-        font-size: 26px;
-        line-height: 1.26;
-        margin-bottom: 30px;
+    
+    .contacts__title--accent {
+        color: $accent-color;
     }
-    @media screen and (min-width: 1280px) {
-        max-width: 1090px;
-        font-size: 46px;
-        line-height: 1.3;
-        margin-bottom: 50px;
-    }
-}
-
-.contacts__title--accent {
-    color: $accent-color;
-}
-
-.contacts__text {
-    font-weight: 600;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.22;
-    letter-spacing: 0.03em;
-    color: $common-white-color;
-    @media screen and (min-width: 320px) {
-        max-width: 240px;
+    
+    .contacts__text {
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         font-size: 12px;
         line-height: 1.22;
-        margin-bottom: 30px;
-        margin-bottom: 10px;
+        letter-spacing: 0.03em;
+        color: $common-white-color;
+        @media screen and (min-width: 320px) {
+            max-width: 240px;
+            font-size: 12px;
+            line-height: 1.22;
+            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 452px;
+            font-size: 14px;
+            line-height: 1.21;
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1000px;
+            font-size: 30px;
+            line-height: 1.23;
+            margin-bottom: 36px;
+        }
     }
-    @media screen and (min-width: 768px) {
-        max-width: 452px;
-        font-size: 14px;
-        line-height: 1.21;
+    
+    .contacts__text--accent {
+        color: $accent-color;
+    }
+    
+    .register {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    .register__input {
+        display: block;
+        height: 48px;
+        cursor: pointer;
+        border: 1px solid $common-white-color;
+        background-color: inherit;
+        color: $common-white-color;
+        font-weight: 600;
+        letter-spacing: 0.08em;
         margin-bottom: 20px;
-    }
-    @media screen and (min-width: 1280px) {
-        max-width: 1000px;
-        font-size: 30px;
-        line-height: 1.23;
-        margin-bottom: 36px;
-    }
-}
-
-.contacts__text--accent {
-    color: $accent-color;
-}
-
-.register {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.register__input {
-    display: block;
-    height: 48px;
-    cursor: pointer;
-    border: 1px solid $common-white-color;
-    background-color: inherit;
-    color: $common-white-color;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    &:not(:first-child) {
-        margin-bottom: 0px;
-    }
-    @media screen and (min-width: 320px) {
-        width: 280px;
-        font-size: 14px;
-        line-height: 1.21;
-    }
-    @media screen and (min-width: 768px) {
-        width: 390px;
-        font-size: 14px;
-        line-height: 1.21;
-    }
-    @media screen and (min-width: 1280px) {
-        width: 478px;
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
         &:not(:first-child) {
             margin-bottom: 0px;
         }
+        @media screen and (min-width: 320px) {
+            width: 280px;
+            font-size: 14px;
+            line-height: 1.21;
+        }
+        @media screen and (min-width: 768px) {
+            width: 390px;
+            font-size: 14px;
+            line-height: 1.21;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 478px;
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            &:not(:first-child) {
+                margin-bottom: 0px;
+            }
+        }
     }
-}
-
-.register__label {
-    display: inline-block;
-    font-weight: 600;
-    color: $common-white-color;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.08em;
-    @media screen and (min-width: 1280px) {
-        width: 478px;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-}
-
-.register__label--name {
-    position: absolute;
-    top: 0px;
-    display: inline-block;
-    opacity: 0;
-    @include transition(opacity);
-    .register__input:not(:placeholder-shown):required:invalid & {
-        opacity: 1;
-    }
-    @media screen and (min-width: 320px) {
-        width: 280px;
-        left: 48px;
-    }
-    @media screen and (min-width: 768px) {
-        width: 390px;
-        left: 197px;
-    }
-    @media screen and (min-width: 1280px) {
-        left: 368px;
-        top: -2px;
-    }
-}
-
-.register__label--tel {
-    position: absolute;
-    top: 69px;
-    left: 48px;
-    display: inline-block;
-    opacity: 0;
-    @include transition(opacity);
-    .register__input:not(:placeholder-shown):required:invalid & {
-        opacity: 1;
-    }
-    @media screen and (min-width: 320px) {
-        left: 48px;
-    }
-    @media screen and (min-width: 768px) {
-        left: 197px;
-    }
-    @media screen and (min-width: 1280px) {
-        left: 365px;
-        top: px;
-        width: 478px;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-}
-
-.register__input::placeholder {
-    padding-left: 28px;
-    color: $common-white-color;
-}
-
-.register__input:not(:placeholder-shown):required:valid {
-    border-color: $common-black-color;
-}
-
-.register__input:not(:placeholder-shown):required:invalid {
-    border-color: rgb(255, 0, 0);
-}
-
-.register__button {
-    display: inline-block;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 260px;
-    height: 48px;
-    padding: 14px 0;
-    margin-top: 50px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.21;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: $common-white-color;
-    background-color: $accent-color;
-    border: 0px;
-    @media screen and (min-width: 768px) {
-        margin-top: 31px;
-    }
-    @media screen and (min-width: 1280px) {
-        margin-top: 80px;
-        width: 354px;
-        height: 70px;
+    
+    .register__label {
+        display: inline-block;
+        font-weight: 600;
+        color: $common-white-color;
         font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.08em;
+        @media screen and (min-width: 1280px) {
+            width: 478px;
+            font-size: 20px;
+            line-height: 1.2;
+        }
     }
-}
+    
+    .register__label--name {
+        position: absolute;
+        top: 0px;
+        display: inline-block;
+        opacity: 0;
+        @include transition(opacity);
+        .register__input:not(:placeholder-shown):required:invalid & {
+            opacity: 1;
+        }
+        @media screen and (min-width: 320px) {
+            width: 280px;
+            left: 48px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 390px;
+            left: 197px;
+        }
+        @media screen and (min-width: 1280px) {
+            left: 368px;
+            top: -2px;
+        }
+    }
+    
+    .register__label--tel {
+        position: absolute;
+        top: 69px;
+        left: 48px;
+        display: inline-block;
+        opacity: 0;
+        @include transition(opacity);
+        .register__input:not(:placeholder-shown):required:invalid & {
+            opacity: 1;
+        }
+        @media screen and (min-width: 320px) {
+            left: 48px;
+        }
+        @media screen and (min-width: 768px) {
+            left: 197px;
+        }
+        @media screen and (min-width: 1280px) {
+            left: 365px;
+            top: px;
+            width: 478px;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+    
+    .register__input::placeholder {
+        padding-left: 28px;
+        color: $common-white-color;
+    }
+    
+    .register__input:not(:placeholder-shown):required:valid {
+        border-color: $common-black-color;
+    }
+    
+    .register__input:not(:placeholder-shown):required:invalid {
+        border-color: rgb(255, 0, 0);
+    }
+    
+    .register__button {
+        display: inline-block;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 260px;
+        height: 48px;
+        padding: 14px 0;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.21;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $common-white-color;
+        background-color: $accent-color;
+        border: 0px;
+        @media screen and (min-width: 768px) {
+            margin-top: 31px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-top: 80px;
+            width: 354px;
+            height: 70px;
+            font-size: 14px;
+        }
+    }
