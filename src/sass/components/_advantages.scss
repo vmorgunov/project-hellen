@@ -21,15 +21,11 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    // align-items: left;
-
     margin: -10px;
   }
 
   @media screen and (min-width: 1314px) {
     flex-wrap: nowrap;
-
-    // margin: -10px;
     margin: -5;
   }
 }
@@ -46,12 +42,7 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 3 * 20) / 3);
-
     margin: 10px;
-
-    // flex-basis: calc((100% - 3 * 10) / 3);
-
-    // margin: 5px;
   }
 
   @media screen and (min-width: 1314px) {
@@ -59,10 +50,6 @@
 
     margin: 10px;
   }
-
-  // flex-basis: calc((100% - 3 * 10) / 3);
-
-  //   margin: 5px;
 }
 
 .advantages__text {
@@ -78,7 +65,7 @@
   }
 
   @media screen and(min-width: 1314px) {
-    // width: 330px;
+    width: 330px;
     font-size: 20px;
     line-height: 1.65;
   }
@@ -86,11 +73,6 @@
 
 .advantages__icon {
   margin-right: 10px;
-
-  // @media screen and (max-width: 1313px) {
-  //   width: 59px;
-  //   height: 60px;
-  // }
 
   @media screen and (min-width: 1314px) {
     margin-right: -12px;
