@@ -82,7 +82,9 @@
     }
 
     @media screen and (min-width: 1344px) {
-      margin-left: -50px;
+      width: 22px;
+      height: 30px;
+      margin-left: -52px;
     }
   }
 
@@ -96,12 +98,14 @@
     border-left: 1px dashed $primary-text-color;
 
     @media screen and (min-width: 768px) {
+      top: 24px;
       height: 30px;
       left: -34px;
     }
 
     @media screen and (min-width: 1344px) {
-      left: -44px;
+      top: 34px;
+      left: -41px;
       height: 40px;
     }
   }
