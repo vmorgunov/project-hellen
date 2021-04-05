@@ -1,10 +1,3 @@
-$common-black-color: #111518;
-$common-white-color: #ffffff;
-$primary-text-color: #b9b9b9;
-$secondary-text-color: #3d3d3d;
-$accent-color: #ff6b09;
-$white-bg-color: #f1f1f1;
-$black-bg-color: #111518e6;
 .contacts {
     margin-left: auto;
     margin-right: auto;
@@ -12,6 +5,7 @@ $black-bg-color: #111518e6;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.63);
+    background-image: url(../images/form_background.png);
     @media screen and (max-width: 767px) {
         display: flex;
         padding-top: 50px;
@@ -237,6 +231,14 @@ $black-bg-color: #111518e6;
     color: $common-white-color;
     background-color: $accent-color;
     border: 0px;
+    cursor: pointer;
+    @include transition(color);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        background-color: $common-white-color;
+        border: 2px solid $accent-color;
+    }
     @media screen and (min-width: 768px) {
         margin-top: 31px;
     }
