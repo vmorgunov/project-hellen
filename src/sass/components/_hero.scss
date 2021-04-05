@@ -13,14 +13,14 @@
   @media screen and(min-width: 768px) {
     padding-top: 71px;
     padding-bottom: 93px;
-    background-image: url('../images/hero_background_tab.png');
+    background-image: url('../images/hero_background.png');
     background-size: contain;
-    background-position: 0px 0px;
+    background-position: 0px 25px;
     background-repeat: no-repeat;
     width: 100%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero_background_tab@2x.png');
+      background-image: url('../images/hero_background@2x.png');
     }
   }
 
@@ -39,7 +39,11 @@
   }
 
   @media screen and(min-width: 1680px) {
-    background-position: 0px -105px;
+    background-position: 0px -155px;
+  }
+
+  @media screen and(min-width: 1820px) {
+    background-position: 0px -210px;
   }
 }
 
@@ -135,6 +139,7 @@
   letter-spacing: 0.08em;
   background-color: $accent-color;
   color: $common-white-color;
+  border: 2px solid $accent-color;
 
   @media screen and(min-width: 768px) {
     margin-left: 0;
@@ -159,29 +164,21 @@
   @media screen and(min-width: 768px) {
     position: absolute;
     top: 84px;
-    right: 18px;
+    right: 45px;
     min-width: 375px;
-    max-width: 40%;
   }
-
-  // @media screen and(min-width: 1280px) {
-  //   position: absolute;
-  //   top: 165px;
-  //   right: 26px;
-  //   max-width: 48%;
-  // }
 
   @media screen and(min-width: 1344px) {
     position: absolute;
     top: 105px;
-    right: 16px;
-    max-width: 48%;
+    right: 86px;
+    max-width: 45%;
   }
 
   @media screen and(min-width: 1680px) {
     position: absolute;
     top: 45px;
-    right: 16px;
-    width: 842px;
+    right: 86px;
+    width: 90%;
   }
 }
