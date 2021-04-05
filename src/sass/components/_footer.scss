@@ -12,7 +12,9 @@
         padding-bottom: 40px;
         padding-top: 40px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1344px) {
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         padding-top: 48px;
         padding-bottom: 53px;
@@ -65,11 +67,8 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
-    @media screen and (min-width: 1280px) {
-        margin-right: 245px;
-    }
     @media screen and (min-width: 1344px) {
-        margin-right: 260px;
+        margin-right: 370px;
     }
 }
 
@@ -96,7 +95,7 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
 }
@@ -108,7 +107,6 @@
     @media screen and (max-width: 767px) {
         flex-direction: row;
         padding-left: 30px;
-        padding-bottom: 30px;
         padding-right: 30px;
     }
     @media screen and (min-width: 768px) {
