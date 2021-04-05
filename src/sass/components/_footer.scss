@@ -12,7 +12,9 @@
         padding-bottom: 40px;
         padding-top: 40px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1344px) {
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         padding-top: 48px;
         padding-bottom: 53px;
@@ -22,15 +24,15 @@
 .footer__logo {
     margin-bottom: 20px;
     @media screen and (max-width: 767px) {
-        position: inherit;
-        min-width: 128px;
+        position: unset;
+        max-width: 84px;
         margin-bottom: 20px;
         .logo__firstgroup--foot {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             font-weight: 800;
-            font-size: 26px;
+            font-size: 16px;
             line-height: 1.23;
             letter-spacing: 0.04em;
             color: $common-black-color;
@@ -40,13 +42,11 @@
             margin-right: 4px;
             margin-left: 4px;
             margin-bottom: 5px;
-            width: 22px;
-            height: 30px;
             margin-bottom: 3.76px;
         }
         .logo__secondgroup--foot {
             font-weight: 700;
-            font-size: 8px;
+            font-size: 5px;
             line-height: 1.25;
             letter-spacing: 0.18em;
             text-transform: uppercase;
@@ -55,21 +55,19 @@
         }
         .logo__thirdgroup--foot {
             font-weight: 700;
-            font-size: 8px;
+            font-size: 5px;
             line-height: 1.25;
             letter-spacing: 0.18em;
             text-transform: uppercase;
             color: $common-black-color;
+            margin-left: 1px;
         }
     }
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
-    @media screen and (min-width: 1280px) {
-        margin-right: 245px;
-    }
     @media screen and (min-width: 1344px) {
-        margin-right: 260px;
+        margin-right: 370px;
     }
 }
 
@@ -95,8 +93,11 @@
     text-align: center;
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
 }
@@ -108,7 +109,6 @@
     @media screen and (max-width: 767px) {
         flex-direction: row;
         padding-left: 30px;
-        padding-bottom: 30px;
         padding-right: 30px;
     }
     @media screen and (min-width: 768px) {
@@ -130,6 +130,10 @@
     &:focus {
         color: $accent-color;
     }
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.2;
+    }
     @media screen and (min-width: 768px) {
         font-size: 20px;
         line-height: 1.2;
@@ -144,7 +148,7 @@
     height: 20px;
     @media screen and (min-width: 768px) {
         top: 10px;
-        left: -30px;
+        left: -35px;
         width: 24px;
         height: 24px;
     }
@@ -159,11 +163,11 @@
     height: 40px;
     border-radius: 30%;
     cursor: pointer;
-    background-image: linear-gradient(to top right, #ffff00, #d104ec);
+    background-image: linear-gradient(to top right, #ffff00, #e404ec);
     @include transition(background-image);
     &:hover,
     &:focus {
-        background-image: linear-gradient(to bottom right, #d104ec, #ffff00);
+        background-image: linear-gradient(to bottom right, #e404ec, #ff6600);
     }
     @media screen and (min-width: 768px) {
         margin-left: 24px;
