@@ -16,8 +16,6 @@
     );
   }
   @media (min-width: 1344px) {
-    // padding-top: 100px;
-    // padding-bottom: 130px;
     background-image: url(../images/problems_fire.png),
       linear-gradient(
         to bottom,
@@ -27,8 +25,8 @@
         #ffffff 100%
       );
     background-repeat: no-repeat;
-    background-position-x: 115%;
-    background-position-y: 17.5%;
+    background-position-x: 100%;
+    background-position-y: 14.5%;
     background-size: 30% 65%, 100%;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -43,8 +41,8 @@
           #ffffff 100%
         );
       background-repeat: no-repeat;
-      background-position-x: 115%;
-      background-position-y: 17.5%;
+      background-position-x: 100%;
+      background-position-y: 14.5%;
       background-size: 30% 65%, 100%;
     }
   }
@@ -53,60 +51,15 @@
 .problems__container {
   padding-top: 50px;
   padding-bottom: 50px;
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   $common-black-color 15%,
-  //   $common-black-color 73%,
-  //   $white-bg-color 73%,
-  //   $white-bg-color 100%
-  // );
 
   @media (min-width: 768px) {
     padding-top: 60px;
   }
-  //   background-image: linear-gradient(
-  //     to bottom,
-  //     $common-black-color 15%,
-  //     $common-black-color 65%,
-  //     $white-bg-color 65%,
-  //     $white-bg-color 100%
-  //   );
-  // }
 
   @media (min-width: 1344px) {
     padding-top: 100px;
     padding-bottom: 130px;
   }
-  //   background-image: url(../images/problems_fire.png),
-  //     linear-gradient(
-  //       to bottom,
-  //       $common-black-color 15%,
-  //       $common-black-color 75%,
-  //       $white-bg-color 75%,
-  //       $white-bg-color 100%
-  //     );
-  //   background-repeat: no-repeat;
-  //   background-position-x: right;
-  //   background-position-y: 30%;
-  //   background-size: 30% 65%, 100%;
-
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/problems_fire@2x.png),
-  //       linear-gradient(
-  //         to bottom,
-  //         $common-black-color 15%,
-  //         $common-black-color 75%,
-  //         $white-bg-color 75%,
-  //         $white-bg-color 100%
-  //       );
-  //     background-repeat: no-repeat;
-  //     background-position-x: right;
-  //     background-position-y: 35%;
-  //     background-size: 30% 65%, 100%;
-  //   }
-  // }
 }
 
 .problems__title {
@@ -123,13 +76,8 @@
 
   @media (min-width: 1344px) {
     width: 860px;
-    // margin-top: 60px;
     margin-bottom: 60px;
   }
-
-  // @media (min-width: 1281px) {
-  //   margin-top: 100px;
-  // }
 }
 
 .problems__break-line {
@@ -172,11 +120,6 @@
     margin-left: -30px;
     margin-top: -30px;
   }
-
-  // @media (min-width: 1600px) {
-  //   margin-left: -30px;
-  //   margin-top: -30px;
-  // }
 }
 
 .problems__item {
@@ -221,13 +164,6 @@
     font-size: 20px;
     line-height: 1.4;
   }
-
-  // @media (min-width: 1600px) {
-  //   flex-basis: calc(100% / 3 - 30px);
-  //   margin-left: 30px;
-  //   margin-top: 30px;
-  //   font-size: 20px;
-  // }
 }
 
 .problems__item--first {
