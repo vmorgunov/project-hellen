@@ -5,6 +5,7 @@
   text-align: center;
   justify-content: space-between;
   align-items: start;
+  z-index: 10;
   &--menu {
     position: absolute;
     top: 30px;
@@ -23,7 +24,7 @@
   @media screen and(min-width: 768px) {
     position: unset;
   }
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     margin-right: auto;
   }
 }
@@ -74,7 +75,7 @@
   color: $common-black-color;
   @media screen and(max-width: 767px) {
     font-size: 5px;
-    margin-left: px;
+    margin-left: 1px;
   }
   &--menu {
     color: $common-white-color;
