@@ -49,6 +49,9 @@
             line-height: 1.36;
             margin-bottom: 30px;
         }
+        @media screen and (min-width: 480px) {
+            max-width: 440px;
+        }
         @media screen and (min-width: 768px) {
             max-width: 648px;
             font-size: 26px;
@@ -82,6 +85,9 @@
             line-height: 1.22;
             margin-bottom: 30px;
             margin-bottom: 10px;
+        }
+        @media screen and (min-width: 480px) {
+            max-width: 440px;
         }
         @media screen and (min-width: 768px) {
             max-width: 452px;
