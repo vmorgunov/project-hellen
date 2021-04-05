@@ -1,111 +1,93 @@
 .logo {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 128px;
-  text-align: center;
-  justify-content: space-between;
-  align-items: start;
-
-  &--menu {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-
-    @media screen and(min-width: 768px) {
-      top: 42px;
-      left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 128px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: start;
+    &--menu {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        @media screen and(min-width: 768px) {
+            top: 42px;
+            left: 40px;
+        }
     }
-  }
+    @media screen and(max-width:767px) {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        max-width: 80px;
+    }
+    @media screen and(min-width: 768px) {
+        position: unset;
+    }
+    @media screen and(min-width: 1280px) {
+        margin-right: auto;
+    }
 
-  @media screen and(max-width:767px) {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    max-width: 80px;
-  }
-  @media screen and(min-width: 768px) {
-    position: unset;
-  }
-}
-  
 .logo__firstgroup {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.23;
-
-  letter-spacing: 0.04em;
-
-  color: $common-black-color;
-  @media screen and(max-width:767px) {
-    font-size: 16px;
-  }
-
-  &--menu {
-    color: $common-white-color;
-  }
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $common-black-color;
+    @media screen and(max-width: 767px) {
+        font-size: 16px;
+    }
+    &--menu {
+        color: $common-white-color;
+    }
 }
 
 .logo__secondgroup {
-  font-weight: 700;
-  font-size: 8px;
-  line-height: 1.25;
-
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-
-  margin-left: 2px;
-
-  color: $accent-color;
-
-  @media screen and(max-width:767px) {
-    color: $common-black-color;
-    font-size: 5px;
-  }
-
-  &--menu {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-left: 2px;
     color: $accent-color;
-
-    @media screen and(max-width:767px) {
-      color: $common-white-color;
+    @media screen and(max-width: 767px) {
+        color: $common-black-color;
+        font-size: 5px;
     }
-  }
+    &--menu {
+        color: $accent-color;
+        @media screen and(max-width: 767px) {
+            color: $common-white-color;
+        }
+    }
 }
 
 .logo__thirdgroup {
-  font-weight: 700;
-  font-size: 8px;
-  line-height: 1.25;
-
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-
-  color: $common-black-color;
-
-  @media screen and(max-width:767px) {
-    font-size: 5px;
-    margin-left: px;
-  }
-
-  &--menu {
-    color: $common-white-color;
-  }
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $common-black-color;
+    @media screen and(max-width: 767px) {
+        font-size: 5px;
+        margin-left: px;
+    }
+    &--menu {
+        color: $common-white-color;
+    }
 }
 
-
 .logo__icon {
-  margin-top: 0;
-  margin-right: 4px;
-  margin-left: 4px;
-  margin-bottom: 5px;
-
-  @media screen and(max-width:767px) {
-    width: 15px;
-    height: 19px;
-    margin-bottom: 3.76px;
-  }
+    margin-top: 0;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+    @media screen and(max-width: 767px) {
+        width: 15px;
+        height: 19px;
+        margin-bottom: 3.76px;
+    }
 }
