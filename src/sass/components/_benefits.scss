@@ -3,20 +3,20 @@
     to bottom,
     $common-black-color 15%,
     $common-black-color 73%,
-    $white-bg-color 73%,
-    $white-bg-color 100%
+    #ffffff 73%,
+    #ffffff 100%
   );
   @media (min-width: 768px) {
     padding-top: 50px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     padding-top: 0;
     background-image: linear-gradient(
       to bottom,
       $common-black-color 15%,
       $common-black-color 15%,
-      $common-white-color 15%,
-      $common-white-color 100%
+      #ffffff 15%,
+      #ffffff 100%
     );
   }
 }
@@ -26,7 +26,7 @@
   padding-top: 39px;
   padding-bottom: 50px;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -74,7 +74,7 @@
     text-align: center;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -91,21 +91,22 @@
 .benefits__wrapper {
   padding: 20px 25px 20px 30px;
   background-color: $common-white-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media (min-width: 768px) {
     padding: 40px 118px 25px 98px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     position: absolute;
     top: -100px;
-    right: 50px;
-    left: 50px;
+    right: 15px;
+    left: 15px;
     padding: 70px 80px;
   }
 
-  @media (min-width: 1600px) {
-    padding: 70px 80px;
-  }
+  // @media (min-width: 1600px) {
+  //   padding: 70px 80px;
+  // }
 }
 
 .benefits__list {
@@ -116,7 +117,7 @@
     margin-left: -20px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     margin-top: -20px;
     margin-left: -20px;
   }
@@ -156,9 +157,9 @@
     }
   }
 
-  @media (min-width: 1280px) {
-    flex-basis: calc(100% / 3 - 40px);
-    font-size: 17px;
+  @media (min-width: 1344px) {
+    flex-basis: calc(100% / 3 - 20px);
+    font-size: 20px;
     line-height: 1.4;
   }
 }

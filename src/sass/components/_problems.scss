@@ -3,32 +3,32 @@
     to bottom,
     $common-black-color 15%,
     $common-black-color 73%,
-    $white-bg-color 73%,
-    $white-bg-color 100%
+    #ffffff 73%,
+    #ffffff 100%
   );
   @media (min-width: 768px) {
     background-image: linear-gradient(
       to bottom,
       $common-black-color 15%,
       $common-black-color 65%,
-      $white-bg-color 65%,
-      $white-bg-color 100%
+      #ffffff 65%,
+      #ffffff 100%
     );
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     // padding-top: 100px;
     // padding-bottom: 130px;
     background-image: url(../images/problems_fire.png),
       linear-gradient(
         to bottom,
         $common-black-color 15%,
-        $common-black-color 60%,
-        #ffffff 60%,
+        $common-black-color 70%,
+        #ffffff 70%,
         #ffffff 100%
       );
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 18%;
+    background-position-x: 115%;
+    background-position-y: 17.5%;
     background-size: 30% 65%, 100%;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -44,7 +44,7 @@
         );
       background-repeat: no-repeat;
       background-position-x: 115%;
-      background-position-y: 18%;
+      background-position-y: 17.5%;
       background-size: 30% 65%, 100%;
     }
   }
@@ -73,7 +73,7 @@
   //   );
   // }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     padding-top: 100px;
     padding-bottom: 130px;
   }
@@ -121,7 +121,7 @@
     margin-bottom: 25px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     width: 860px;
     // margin-top: 60px;
     margin-bottom: 60px;
@@ -147,13 +147,14 @@
 .problems__wrapper {
   padding: 20px 15px 20px 30px;
   background-color: $common-white-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media (min-width: 768px) {
     padding: 30px 45px 26px 96px;
   }
 
-  @media (min-width: 1280px) {
-    max-width: 1314px;
+  @media (min-width: 1344px) {
+    max-width: 1344px;
     padding: 80px 114px 60px 114px;
   }
 }
@@ -166,16 +167,16 @@
     margin-left: -30px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1344px) {
     text-align: left;
     margin-left: -30px;
     margin-top: -30px;
   }
 
-  @media (min-width: 1600px) {
-    margin-left: -30px;
-    margin-top: -30px;
-  }
+  // @media (min-width: 1600px) {
+  //   margin-left: -30px;
+  //   margin-top: -30px;
+  // }
 }
 
 .problems__item {
@@ -212,21 +213,21 @@
     }
   }
 
-  @media (min-width: 1280px) {
-    flex-basis: calc(100% / 3 - 40px);
-    margin-left: 30px;
-    margin-top: 30px;
-
-    font-size: 17px;
-    line-height: 1.4;
-  }
-
-  @media (min-width: 1600px) {
+  @media (min-width: 1344px) {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+
     font-size: 20px;
+    line-height: 1.4;
   }
+
+  // @media (min-width: 1600px) {
+  //   flex-basis: calc(100% / 3 - 30px);
+  //   margin-left: 30px;
+  //   margin-top: 30px;
+  //   font-size: 20px;
+  // }
 }
 
 .problems__item--first {
