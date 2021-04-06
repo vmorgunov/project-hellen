@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
+    background-color: $common-black-color;
     @media screen and (max-width: 768px) {
         display: flex;
         padding-top: 50px;
