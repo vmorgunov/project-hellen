@@ -2,12 +2,19 @@
   background-image: linear-gradient(
     to bottom,
     $common-black-color 15%,
-    $common-black-color 73%,
-    #ffffff 73%,
+    $common-black-color 61%,
+    #ffffff 61%,
     #ffffff 100%
   );
   @media (min-width: 768px) {
     padding-top: 50px;
+    background-image: linear-gradient(
+      to bottom,
+      $common-black-color 15%,
+      $common-black-color 50%,
+      #ffffff 50%,
+      #ffffff 100%
+    );
   }
   @media (min-width: 1344px) {
     padding-top: 0;
