@@ -174,20 +174,44 @@
 }
 
 .slick-next::before {
-  margin-left: 58px;
+  @media screen and (min-width: 1344px) {
+    margin-left: 58px;
+  }
 }
 
-.slick-prev::before {
-  margin-right: 58px;
-}
+// .slick-prev::before {
+//   margin-right: 58px;
+// }
 
 .slick-prev {
   @media screen and (max-width: 767px) {
-    top: 590px;
+    top: 502px;
     left: 0;
   }
 
+  @media screen and (min-width: 768px) {
+    top: 150px;
+    left: -25px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    right: unset;
+    top: 150px;
+    left: -86px;
+  }
+
   //   left: -105px;
+}
+
+.slick-next {
+  @media screen and (max-width: 767px) {
+    top: 502px;
+    right: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    right: -2px;
+    top: 150px;
+  }
 }
 
 .item-none {
