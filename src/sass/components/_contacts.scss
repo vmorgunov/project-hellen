@@ -77,7 +77,7 @@
     text-align: center;
     font-size: 12px;
     line-height: 1.22;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.08em;
     color: $common-white-color;
     @media screen and (min-width: 320px) {
         max-width: 240px;
@@ -128,7 +128,7 @@
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 30px;
     &:not(:first-child) {
         margin-bottom: 0px;
     }
@@ -180,19 +180,19 @@
         opacity: 1;
     }
     @media screen and (min-width: 320px) {
-        left: 48px;
+        left: 30px;
     }
     @media screen and (min-width: 480px) {
-        left: 130px;
+        left: 110px;
     }
     @media screen and (min-width: 768px) {
-        left: 175px;
+        left: 160px;
     }
     @media screen and (min-width: 1280px) {
-        left: 200px;
+        left: 180px;
     }
     @media screen and (min-width: 1344px) {
-        left: 465px;
+        left: 450px;
         top: -5px;
     }
 }
@@ -210,32 +210,26 @@
         opacity: 1;
     }
     @media screen and (min-width: 320px) {
-        left: 48px;
+        left: 30px;
     }
     @media screen and (min-width: 480px) {
-        left: 130px;
+        left: 110px;
     }
     @media screen and (min-width: 768px) {
-        left: 175px;
+        left: 160px;
     }
     @media screen and (min-width: 1280px) {
-        left: 200px;
+        left: 180px;
     }
     @media screen and (min-width: 1344px) {
         top: 95px;
-        left: 465px;
+        left: 450px;
         font-size: 20px;
         line-height: 1.2;
     }
 }
 
 .register__input::placeholder {
-    padding-left: 28px;
-    color: $common-white-color;
-}
-
-.register__input::placeholder {
-    padding-left: 28px;
     color: $common-white-color;
 }
 
