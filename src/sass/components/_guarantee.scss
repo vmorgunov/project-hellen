@@ -1,6 +1,6 @@
 .guarantee {
   @media screen and(max-width:767px) {
-    background-image: linear-gradient(to bottom, #ffffff 20.5%, #f1f1f1 20.5%);
+    background-image: linear-gradient(to bottom, $common-white-color 20.5%, #f1f1f1 20.5%);
   }
 }
 
