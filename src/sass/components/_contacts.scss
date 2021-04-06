@@ -266,9 +266,9 @@
   text-transform: uppercase;
   color: $common-white-color;
   background-color: $accent-color;
-  border: 0px;
+  border: 2px solid transparent;
   cursor: pointer;
-  @include transition(color);
+  @include transition(all);
   &:hover,
   &:focus {
     color: $accent-color;
