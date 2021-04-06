@@ -46,7 +46,7 @@
   font-style: normal;
   color: $secondary-text-color;
   padding-left: 35px;
-  width: 245px;
+  width: 100%;
 
   @media screen and(min-width:768px) {
     width: 520px;
@@ -94,7 +94,7 @@
     top: 25px;
     left: 7px;
     width: 0px;
-    height: 68px;
+    height: 100%;
     border-left: 1px dashed $primary-text-color;
 
     @media screen and (min-width: 768px) {
