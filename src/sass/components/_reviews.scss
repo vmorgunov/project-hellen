@@ -185,7 +185,7 @@
 
 .slick-prev {
   @media screen and (max-width: 767px) {
-    top: 502px;
+    top: 102%;
     left: 0;
   }
 
@@ -205,8 +205,8 @@
 
 .slick-next {
   @media screen and (max-width: 767px) {
-    top: 502px;
-    right: 25px;
+    top: 102%;
+    right: 29px;
   }
   @media screen and (min-width: 768px) {
     right: -2px;

@@ -1,4 +1,4 @@
-.how-we-do { 
+.how-we-do {
   padding-bottom: 50px;
 
   @media screen and(min-width: 1344px) {
@@ -26,7 +26,6 @@
 }
 
 .how-we-do__list {
-  
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +42,7 @@
   width: 100%;
   max-width: 280px;
   height: 280px;
-  padding-top: 30px;
+  padding: 30px 10px;
   cursor: pointer;
   margin: 0 auto;
   text-align: center;
@@ -92,7 +91,7 @@
 
   &:hover,
   &:focus {
-    .how-we-do__icon{
+    .how-we-do__icon {
       fill: $common-white-color;
     }
   }
@@ -116,14 +115,13 @@
 
   &:hover,
   &:focus {
-      fill: $common-white-color;
-    }
+    fill: $common-white-color;
+  }
 
-   @media screen and(min-width: 768px) {
+  @media screen and(min-width: 768px) {
     margin-bottom: 30px;
   }
 }
-
 
 .how-we-do__subtitle {
   font-weight: 700;
