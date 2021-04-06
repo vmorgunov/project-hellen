@@ -1,28 +1,33 @@
 .problems {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: linear-gradient(
     to bottom,
     $common-black-color 15%,
     $common-black-color 73%,
-    #ffffff 73%,
-    #ffffff 100%
+    $common-white-color 73%,
+    $common-white-color 100%
   );
   @media (min-width: 768px) {
+    padding-top: 60px;
     background-image: linear-gradient(
       to bottom,
       $common-black-color 15%,
       $common-black-color 65%,
-      #ffffff 65%,
-      #ffffff 100%
+      $common-white-color 65%,
+      $common-white-color 100%
     );
   }
   @media (min-width: 1344px) {
+    padding-top: 100px;
+    padding-bottom: 130px;
     background-image: url(../images/problems_fire.png),
       linear-gradient(
         to bottom,
         $common-black-color 15%,
         $common-black-color 70%,
-        #ffffff 70%,
-        #ffffff 100%
+        $common-white-color 70%,
+        $common-white-color 100%
       );
     background-repeat: no-repeat;
     background-position-x: 100%;
@@ -37,28 +42,14 @@
           to bottom,
           $common-black-color 15%,
           $common-black-color 70%,
-          #ffffff 70%,
-          #ffffff 100%
+          $common-white-color 70%,
+          $common-white-color 100%
         );
       background-repeat: no-repeat;
       background-position-x: 100%;
       background-position-y: 14.5%;
       background-size: 30% 65%, 100%;
     }
-  }
-}
-
-.problems__container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  @media (min-width: 768px) {
-    padding-top: 60px;
-  }
-
-  @media (min-width: 1344px) {
-    padding-top: 100px;
-    padding-bottom: 130px;
   }
 }
 
@@ -139,6 +130,10 @@
     line-height: 1.42;
     letter-spacing: 0.08em;
     color: $accent-color;
+
+    @media (min-width: 1344px) {
+      font-size: 20px;
+    }
   }
 
   font-weight: 700;

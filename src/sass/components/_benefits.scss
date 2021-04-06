@@ -2,21 +2,29 @@
   background-image: linear-gradient(
     to bottom,
     $common-black-color 15%,
-    $common-black-color 73%,
-    #ffffff 73%,
-    #ffffff 100%
+    $common-black-color 61%,
+    $common-white-color 61%,
+    $common-white-color 100%
   );
   @media (min-width: 768px) {
     padding-top: 50px;
+    background-image: linear-gradient(
+      to bottom,
+      $common-black-color 15%,
+      $common-black-color 50%,
+      $common-white-color 50%,
+      $common-white-color 100%
+    );
   }
   @media (min-width: 1344px) {
     padding-top: 0;
+    padding-bottom: 0;
     background-image: linear-gradient(
       to bottom,
       $common-black-color 15%,
       $common-black-color 15%,
-      #ffffff 15%,
-      #ffffff 100%
+      $common-white-color 15%,
+      $common-white-color 100%
     );
   }
 }
@@ -25,32 +33,6 @@
   position: relative;
   padding-top: 39px;
   padding-bottom: 50px;
-
-  @media (min-width: 1344px) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   $common-black-color 15%,
-  //   $common-black-color 73%,
-  //   $white-bg-color 73%,
-  //   $white-bg-color 100%
-  // );
-  // @media (min-width: 768px) {
-  //   padding-top: 50px;
-  // }
-  // @media (min-width: 1280px) {
-  //   padding-top: 50px;
-  //   padding-bottom: 335px;
-  //   background-image: linear-gradient(
-  //     to bottom,
-  //     $common-black-color 15%,
-  //     $common-black-color 15%,
-  //     $common-white-color 15%,
-  //     $common-white-color 100%
-  //   );
-  // }
 }
 
 .benefits__title {
@@ -98,15 +80,11 @@
   }
   @media (min-width: 1344px) {
     position: absolute;
-    top: -100px;
+    top: -95px;
     right: 15px;
     left: 15px;
-    padding: 70px 80px;
+    padding: 70px 82px;
   }
-
-  // @media (min-width: 1600px) {
-  //   padding: 70px 80px;
-  // }
 }
 
 .benefits__list {
@@ -140,6 +118,10 @@
     line-height: 1.42;
     letter-spacing: 0.08em;
     color: $accent-color;
+
+    @media (min-width: 1344px) {
+      font-size: 20px;
+    }
   }
 
   font-weight: 700;
