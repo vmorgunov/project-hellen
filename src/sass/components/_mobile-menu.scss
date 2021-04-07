@@ -36,8 +36,11 @@
   }
 }
 
-.menu__container-head {
+.menu-open {
+  overflow: hidden;
+}
 
+.menu__container-head {
   @media screen and(min-width: 768px) {
     position: absolute;
     top: 42px;
@@ -57,7 +60,7 @@
   z-index: 10;
   border: none;
   background-color: transparent;
-  
+
   @media screen and(max-width: 767px) {
     position: absolute;
     top: 38px;
@@ -73,7 +76,7 @@
   }
 }
 
-.menu__button-close{
+.menu__button-close {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -101,7 +104,7 @@
     font-weight: 800;
     font-size: 26px;
     line-height: 1.8;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
   }
 
   &:hover,
