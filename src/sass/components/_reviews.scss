@@ -203,6 +203,7 @@
 .slick-next::before {
   content: '\27F6';
   font-size: 20px;
+  font-weight: 700;
   color: $accent-color;
   @media screen and (min-width: 1344px) {
     margin-left: 58px;
@@ -212,6 +213,7 @@
 .slick-prev::before {
   content: '\27F5';
   font-size: 20px;
+  font-weight: 700;
   color: $accent-color;
   margin-right: 58px;
 }
