@@ -168,7 +168,6 @@
   height: 54px;
   border-radius: 50%;
   border: 2px solid $primary-text-color;
-  
 }
 
 .slick-slide {
@@ -176,7 +175,7 @@
   &:hover {
     cursor: pointer;
   }
-  &.is-active .reviews-slider__img {   
+  &.is-active .reviews-slider__img {
     border-radius: 50%;
     border: 3px solid $accent-color;
     padding: 0;
@@ -203,7 +202,7 @@
 
 .slick-next::before {
   content: '\27F6';
-  font-size: 40px;
+  font-size: 20px;
   color: $accent-color;
   @media screen and (min-width: 1344px) {
     margin-left: 58px;
@@ -212,7 +211,7 @@
 
 .slick-prev::before {
   content: '\27F5';
-  font-size: 40px;
+  font-size: 20px;
   color: $accent-color;
   margin-right: 58px;
 }
