@@ -240,3 +240,10 @@
     right: -2px;
   }
 }
+
+.slick-prev,
+.slick-next {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
